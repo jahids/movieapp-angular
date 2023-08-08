@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './Component/dashboard/dashboard.component';
 import { MovielistComponent } from './Component/movielist/movielist.component';
 import { MovielistItemComponent } from './Component/movielist-item/movielist-item.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MovielistItemComponent } from './Component/movielist-item/movielist-ite
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,41 @@
-<p>dashboard works!</p>
+<!-- <p>dashboard works!</p>
+<div class="grid grid-cols-4 gap-4 center">
+<div *ngFor="let item of allmovieData" class=" ">
+  
+        <img class="rounded-t-lg" [src] = "getFullImage(item.poster_path)" alt="" />
+  
+    
+</div>
+</div> -->
+<div class="grid grid-cols-3 gap-3 m-5 ">
+<div *ngFor="let item of allmovieData" >
+<a href="#" class="group relative block bg-black rounded-md">
+    <img
+      alt="Developer"
+      [src] = "getFullImage(item.poster_path)"
+      class="absolute rounded inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+    />
+  
+    <div class="relative p-4 sm:p-6 lg:p-8">
+      <p class="text-sm font-medium uppercase tracking-widest text-pink-500">
+        Developer
+      </p>
+  
+      <p class="text-xl font-bold text-white sm:text-2xl">Tony Wayne</p>
+  
+      <div class="mt-32 sm:mt-48 lg:mt-64">
+        <div
+          class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+        >
+          <p class="text-sm text-white">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+            perferendis hic asperiores quibusdam quidem voluptates doloremque
+            reiciendis nostrum harum. Repudiandae?
+          </p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+</div>
+</div>
