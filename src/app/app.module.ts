@@ -7,18 +7,22 @@ import { DashboardComponent } from './Component/dashboard/dashboard.component';
 import { MovielistComponent } from './Component/movielist/movielist.component';
 import { MovielistItemComponent } from './Component/movielist-item/movielist-item.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SingleDetailsComponent } from './Component/single-details/single-details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     MovielistComponent,
-    MovielistItemComponent
+    MovielistItemComponent,
+    SingleDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
